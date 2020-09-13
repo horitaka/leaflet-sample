@@ -6,6 +6,8 @@ window.addEventListener('load', () => {
   });
 
   var bounds = [[0, 0], [640, 640]];
+  map.setMaxBounds(bounds)
+
   var image = L.imageOverlay('./images/map-4348394_1280.png', bounds).addTo(map);
 
   L.control.zoom({
